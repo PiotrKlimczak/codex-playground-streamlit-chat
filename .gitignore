@@ -1,0 +1,12 @@
+# Byte-compiled / temporary files
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+
+# Database
+chat.db
+
+# OAuth credentials
+client_secret.json

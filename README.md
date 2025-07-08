@@ -19,3 +19,18 @@ This example app demonstrates a Streamlit chat interface using LangChain and the
    ```bash
    streamlit run app.py
    ```
+
+## MCP Tools
+The app supports simple "Model Context Protocol" tools that transform the LLM response.
+Each user can enable tools in the sidebar and the selection is stored in the database.
+Enabled tools are sent to the OpenAI model using the function-calling API so the model can invoke them during generation.
+The example tools included are:
+
+- `uppercase` &ndash; convert the response to upper case
+- `excited` &ndash; append an exclamation mark
+
+## Running Tests
+Unit tests are located in the `tests` directory and can be run with:
+```bash
+pytest
+```
